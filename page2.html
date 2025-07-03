@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Html</title>
+</head>
+<body>
+
+    <h1>HTML - Linguagem de Marcação de Hipertexto</h1>
+
+    <p>O HTML é uma linguagem de marcação usada para estruturar o conteúdo das páginas web. Foi criada por <strong>Tim Berners-Lee</strong> nos anos 90 e é a base da web moderna.</p>
+
+    <h2>Índice</h2>
+        <ul>
+            <li><a href="index.html">Módulo 1 - Primeiros Passos com Web</a></li>
+            <li><a href="page2.html">HTML - Linguagem de Marcação de Hipertexto</a></li>
+        </ul>
+
+    <h2 id="indice">Índice Conteudo</h2>
+
+    <ol>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#tags-basicas">Tags Básicas</a></li>
+        <li><a href="#tags-estruturais">Tags Estruturais</a></li>
+        <li><a href="#tags-tabela">Tags Tabela</a></li>
+        <li><a href="#tags-formatacao">Tags Formatação</a></li>
+        <li><a href="#tags-texto">Tags de Texto</a></li>
+        <li><a href="#tags-link">Tags Link</a></li>
+        <li><a href="#tags-formulario">Tags Formulário</a></li>
+        <li><a href="#tags-midia">Tags de Mídia</a></li>
+        <li><a href="#tags-estruturais">Tags Estruturais</a></li>
+        <li><a href="#html-semantico">HTML Semântico</a></li>
+        <li><a href="#tags-iframe">Tags Iframe</a></li>
+        <li><a href="#tags-citacao">Tags de Citação</a></li>
+
+        <li><a href="#seo">SEO</a></li>
+    </ol>
+
+    <h2 id="historia">História</h2>
+    <p>O HTML surgiu com o objetivo de compartilhar documentos científicos entre pesquisadores. Criado por <strong>Tim Berners-Lee</strong>, ele permitiu a criação de links entre páginas, formando a base da <u>World Wide Web</u>.</p>
+    <p>Mais em: <a href="https://pt.wikipedia.org/wiki/HTML" target="_blank">História do HTML</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
+
+    <h2 id="tags-basicas">Tags Básicas</h2>
+    <p>Essas tags formam a estrutura mínima de uma página HTML:</p>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code></li>
+        <li><code>&lt;html&gt;</code></li>
+        <li><code>&lt;head&gt;</code></li>
+        <li><code>&lt;body&gt;</code></li>
+    </ul>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Título&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Olá!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank">MDN - Elementos HTML</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
+
+
+<h2 id="tags-estruturais">Tags Estruturais</h2>
+
+<p>As <strong>tags estruturais</strong> são usadas para organizar e dar significado à estrutura de uma página HTML. Elas ajudam na organização do conteúdo, na semântica e são importantes para a <strong>acessibilidade</strong> e para mecanismos de busca (<i>SEO</i>).</p>
+
+<p>Aqui estão as principais tags:</p>
+
+<ul>
+  <li><code>&lt;body&gt;</code>: Contém todo o conteúdo visível da página.</li>
+  <li><code>&lt;div&gt;</code>: Contêiner genérico, usado para agrupar elementos. Sem significado semântico por si só.</li>
+  <li><code>&lt;header&gt;</code>: Representa o cabeçalho de uma seção ou da página. Normalmente contém logo, menu, título.</li>
+  <li><code>&lt;main&gt;</code>: Define o conteúdo principal da página (único e principal).</li>
+  <li><code>&lt;section&gt;</code>: Agrupa conteúdos com um mesmo tema ou propósito.</li>
+  <li><code>&lt;article&gt;</code>: Conteúdo independente e reutilizável, como postagens ou notícias.</li>
+  <li><code>&lt;aside&gt;</code>: Conteúdo secundário, como barras laterais ou sugestões.</li>
+  <li><code>&lt;footer&gt;</code>: Rodapé de uma seção ou da página (informações de contato, copyright etc.).</li>
+</ul>
+
+<p><strong>Por que usar essas tags?</strong></p>
+<ul>
+  <li><strong>Semântica:</strong> Permitem que navegadores, leitores de tela e mecanismos de busca entendam melhor o conteúdo.</li>
+  <li><strong>Organização:</strong> Facilitam a manutenção e a leitura do código.</li>
+  <li><strong>SEO:</strong> Ajudam a posicionar melhor o site em mecanismos de busca.</li>
+</ul>
+
+<p><strong>Exemplo prático:</strong></p>
+
+<pre>
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Meu Site&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;a href="#home"&gt;Início&lt;/a&gt;
+      &lt;a href="#sobre"&gt;Sobre&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Bem-vindo&lt;/h2&gt;
+      &lt;p&gt;Conteúdo principal aqui.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;aside&gt;
+      &lt;p&gt;Links úteis ou propaganda aqui.&lt;/p&gt;
+    &lt;/aside&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;© 2025 Joseph da Costa Ribeiro&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+</pre>
+
+<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/section" target="_blank">MDN - Tags Semânticas</a></p>
+<p><a href="#indice">Voltar ao índice</a></p>
+
+
+    <h2 id="tags-tabela">Tags Tabela</h2>
+
+<p>As <strong>tabelas HTML</strong> são usadas para organizar dados em linhas e colunas, sendo muito úteis para representar informações estruturadas. Abaixo estão as principais tags:</p>
+
+<ul>
+    <li><code>&lt;table&gt;</code>: define o início de uma tabela.</li>
+    <li><code>&lt;tr&gt;</code>: cria uma linha da tabela (table row).</li>
+    <li><code>&lt;td&gt;</code>: cria uma célula de dado (table data).</li>
+    <li><code>&lt;th&gt;</code>: cria uma célula de cabeçalho (table header), com texto em negrito e centralizado por padrão.</li>
+    <li><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>: dividem a tabela semanticamente em cabeça, corpo e rodapé.</li>
+    <li><code>border</code>: atributo usado (em HTML antigo) para exibir bordas. Hoje o ideal é usar CSS.</li>
+</ul>
+
+<p><strong>Exemplo simples:</strong></p>
+
+<pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nome&lt;/th&gt;
+    &lt;th&gt;Idade&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Maria&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<p><strong>Exemplo temático:</strong> Estilos de Arte e seus Artistas mais Aclamados:</p>
+
+<table border="1" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Estilo de Arte</th>
+      <th>Artista Mais Aclamado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Impressionismo</td>
+      <td>Claude Monet</td>
+    </tr>
+    <tr>
+      <td>Surrealismo</td>
+      <td>Salvador Dalí</td>
+    </tr>
+    <tr>
+      <td>Renascimento</td>
+      <td>Leonardo da Vinci</td>
+    </tr>
+    <tr>
+      <td>Expressionismo</td>
+      <td>Edvard Munch</td>
+    </tr>
+    <tr>
+      <td>Arte Abstrata</td>
+      <td>Wassily Kandinsky</td>
+    </tr>
+    <tr>
+      <td>Pop Art</td>
+      <td>Andy Warhol</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Você pode personalizar ainda mais com CSS, definindo cores, alinhamento, espaçamento, etc.</p>
+
+<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table" target="_blank">MDN - Tabelas</a></p>
+<p><a href="#indice">Voltar ao índice</a></p>
+
+
+    <h2 id="tags-formatacao">Tags Formatação</h2>
+    <p>Servem para alterar a aparência de partes do texto.</p>
+    <ul>
+        <li><code>&lt;b&gt;</code> ou <code>&lt;strong&gt;</code> - <strong>Negrito</strong></li>
+        <li><code>&lt;i&gt;</code> ou <code>&lt;em&gt;</code> - <i>Itálico</i></li>
+        <li><code>&lt;u&gt;</code> - <u>Sublinhado</u></li>
+        <li><code>&lt;mark&gt;</code> - <mark>Texto marcado</mark></li>
+    </ul>
+    <p><a href="https://www.w3schools.com/html/html_formatting.asp" target="_blank">W3Schools - HTML Formatting</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
+
+    <h2 id="tags-texto">Tags de Texto</h2>
+    <ul>
+        <li><code>&lt;h1&gt; até &lt;h6&gt;</code> - Títulos de diferentes níveis</li>
+        <li><code>&lt;p&gt;</code> - Parágrafo</li>
+        <li><code>&lt;br&gt;</code> - Quebra de linha</li>
+        <li><code>&lt;hr&gt;</code> - Linha horizontal</li>
+    </ul>
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements" target="_blank">MDN - Headings</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
+
+    <h2 id="tags-link">Tags Link</h2>
+    <p>Usada para criar links entre páginas ou para outros sites.</p>
+    <pre>
+&lt;a href="https://exemplo.com"&gt;Clique aqui&lt;/a&gt;
+    </pre>
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a" target="_blank">MDN - Elemento &lt;a&gt;</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
+
+    
+
+    <h2 id="tags-midia">Tags de Mídia</h2>
+
+<p>Essas tags permitem incorporar mídias como <strong>imagens</strong>, <strong>áudio</strong> e <strong>vídeo</strong> nas páginas HTML.</p>
+
+<h3>Imagem</h3>
+
+<p>Usando imagem local:</p>
+<img src="midias/image.jpg" alt="gato" width="200" height="200">
+
+<p>Imagem da internet <i>(troca automaticamente ao recarregar a página)</i>:</p>
+<img src="https://picsum.photos/800/400" alt="Imagem Aleatória da Internet">
+
+<pre>
+&lt;img src="midias/image.jpg" alt="gato" width="200" height="200"&gt;
+&lt;img src="https://picsum.photos/800/400" alt="Imagem Aleatória"&gt;
+&lt;img src="https://loremflickr.com/800/400/coffee" alt="Imagem de café"&gt;
+</pre>
+
+<h3>Áudio</h3>
+
+<p>Áudio local:</p>
+<audio controls>
+  <source src="midias/musica.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+
+<p>Áudio da internet (exemplo do FreeSound):</p>
+<audio controls>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+
+<pre>
+&lt;audio controls src="midias/musica.mp3"&gt;&lt;/audio&gt;
+&lt;audio controls&gt;
+  &lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+</pre>
+
+<h3>Vídeo</h3>
+
+<p>Vídeo local:</p>
+<video width="400" controls>
+  <source src="midias/video.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo.
+</video>
+
+<p>Vídeo da internet (exemplo com vídeo MP4 direto):</p>
+<video width="400" controls>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo.
+</video>
+
+<pre>
+&lt;video width="400" controls src="midias/video.mp4"&gt;&lt;/video&gt;
+&lt;video width="400" controls&gt;
+  &lt;source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+</pre>
+
+<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img" target="_blank">MDN - &lt;img&gt;</a> |
+   <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/audio" target="_blank">MDN - &lt;audio&gt;</a> |
+   <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/video" target="_blank">MDN - &lt;video&gt;</a>
+</p>
+
+<p><a href="#indice">Voltar ao índice</a></p>
+
+    <h2 id="html-semantico">HTML Semântico</h2>
+    <p>O HTML5 trouxe tags que indicam o significado do conteúdo:</p>
+    <ul>
+        <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code></li>
+        <li><code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code></li>
+    </ul>
+    <p>Isso melhora a acessibilidade e o SEO.</p>
+    <p><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics" target="_blank">HTML Semântico - MDN</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
+
+    <h2 id="tags-iframe">Tags Iframe</h2>
+
+<p>A tag <code>&lt;iframe&gt;</code> é usada para incorporar outro site ou conteúdo externo dentro da página, como vídeos do YouTube, mapas do Google, documentos, etc.</p>
+
+<p><strong>Exemplo:</strong> Incorporando um vídeo do YouTube:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+        title="Vídeo exemplo" frameborder="0" allowfullscreen></iframe>
+
+<p>Ou um site externo:</p>
+<iframe src="https://dio.me" width="600" height="400" title="Site DIO"></iframe>
+
+<pre>
+&lt;iframe src="https://dio.me" width="600" height="400"&gt;&lt;/iframe&gt;
+
+&lt;iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+        title="YouTube" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</pre>
+
+<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe" target="_blank">MDN - &lt;iframe&gt;</a></p>
+<p><a href="#indice">Voltar ao índice</a></p>
+
+
+<h2 id="tags-citacao">Tags de Citação e Referência</h2>
+
+<p>Essas tags são usadas para marcar trechos de texto citados ou referenciados de outras fontes.</p>
+
+<ul>
+    <li><code>&lt;blockquote&gt;</code>: para citações em bloco, geralmente longas.</li>
+    <li><code>&lt;q&gt;</code>: para citações curtas, dentro de um parágrafo.</li>
+    <li><code>&lt;cite&gt;</code>: para indicar a fonte de uma obra (livros, sites, músicas, etc.).</li>
+    <li><code>&lt;abbr&gt;</code>: para abreviações com significado completo.</li>
+</ul>
+
+<p><strong>Exemplos:</strong></p>
+
+<p><code>&lt;blockquote&gt;</code>:</p>
+<blockquote cite="https://developer.mozilla.org/pt-BR/">
+  A web é um ambiente em constante evolução, e o HTML é uma de suas fundações.
+</blockquote>
+
+<p><code>&lt;q&gt;</code>: <q>Conhecimento é poder.</q></p>
+
+<p><code>&lt;cite&gt;</code>: <cite>A Origem das Espécies</cite> por Charles Darwin.</p>
+
+<p><code>&lt;abbr&gt;</code>: Você conhece o significado de <abbr title="HyperText Markup Language">HTML</abbr>?</p>
+
+<pre>
+&lt;blockquote cite="https://developer.mozilla.org/pt-BR/"&gt;
+  A web é um ambiente em constante evolução.
+&lt;/blockquote&gt;
+
+&lt;q&gt;Conhecimento é poder.&lt;/q&gt;
+
+&lt;cite&gt;A Origem das Espécies&lt;/cite&gt;
+
+&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+</pre>
+
+<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote" target="_blank">MDN - &lt;blockquote&gt;</a></p>
+<p><a href="#indice">Voltar ao índice</a></p>
+
+
+
+    <h2 id="seo">SEO</h2>
+    <p>SEO (<i>Search Engine Optimization</i>) é o conjunto de técnicas que ajudam páginas a serem melhor indexadas por mecanismos de busca como o Google.</p>
+    <ul>
+        <li>Uso correto de títulos (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>...)</li>
+        <li>Metatags: <code>&lt;meta name="description"&gt;</code></li>
+        <li>Estrutura semântica</li>
+    </ul>
+    <p><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank">Guia de SEO - Google</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
+
+</body>
+</html>
