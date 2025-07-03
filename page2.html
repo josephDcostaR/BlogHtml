@@ -31,6 +31,7 @@
         <li><a href="#tags-midia">Tags de Mídia</a></li>
         <li><a href="#tags-estruturais">Tags Estruturais</a></li>
         <li><a href="#html-semantico">HTML Semântico</a></li>
+        <li><a href="#tags-semanticas-midias">Tags Semânticas para Mídia e Acessibilidade</a></li>
         <li><a href="#tags-iframe">Tags Iframe</a></li>
         <li><a href="#tags-citacao">Tags de Citação</a></li>
 
@@ -322,6 +323,62 @@
 
 <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe" target="_blank">MDN - &lt;iframe&gt;</a></p>
 <p><a href="#indice">Voltar ao índice</a></p>
+
+
+<h2 id="tags-semanticas-midias">Tags Semânticas para Mídia e Acessibilidade</h2>
+
+<p>Em HTML5, diversas tags foram introduzidas ou reforçadas para tornar o conteúdo multimídia mais acessível, responsivo e semântico. Isso melhora a experiência de usuários com deficiência visual, leitores de tela e também é considerado um ponto importante em SEO.</p>
+
+<h3>1. <code>&lt;picture&gt;</code> + <code>&lt;source&gt;</code></h3>
+<p>Permitem exibir diferentes versões de uma imagem conforme o tamanho da tela ou tipo de dispositivo. Muito útil para tornar sites responsivos.</p>
+
+<pre>
+&lt;picture&gt;
+  &lt;source media="(max-width: 600px)" srcset="img-pequena.jpg"&gt;
+  &lt;source media="(min-width: 601px)" srcset="img-grande.jpg"&gt;
+  &lt;img src="img-padrao.jpg" alt="Descrição da imagem"&gt;
+&lt;/picture&gt;
+</pre>
+
+<h3>2. <code>&lt;figure&gt;</code> + <code>&lt;figcaption&gt;</code></h3>
+<p>Usados para agrupar mídias com suas legendas. Isso dá contexto semântico à imagem, áudio ou vídeo.</p>
+
+<pre>
+&lt;figure&gt;
+  &lt;img src="obra.jpg" alt="Pintura expressionista de 1905"&gt;
+  &lt;figcaption&gt;"A Cidade Azul" - Pintura de artista desconhecido&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+
+<h3>3. <code>alt</code> em <code>&lt;img&gt;</code></h3>
+<p>O atributo <code>alt</code> é obrigatório para acessibilidade. Ele descreve a imagem para leitores de tela e é exibido se a imagem falhar ao carregar.</p>
+
+<pre>
+&lt;img src="perfil.jpg" alt="Foto de perfil de Joseph sorrindo"&gt;
+</pre>
+
+<h3>4. Atributos ARIA e <code>title</code></h3>
+<p>Os atributos <code>aria-label</code>, <code>aria-hidden</code> e <code>title</code> fornecem mais informações para leitores de tela e dicas visuais:</p>
+
+<pre>
+&lt;button aria-label="Fechar menu"&gt;X&lt;/button&gt;
+&lt;img src="logo.svg" alt="Logo da empresa" title="Clique para voltar à home"&gt;
+</pre>
+
+<p><strong>Resumo:</strong> Usar corretamente essas tags e atributos melhora:</p>
+<ul>
+  <li>♿ Acessibilidade para pessoas com deficiência</li>
+  <li>📱 Adaptação da mídia em diferentes dispositivos</li>
+  <li>🔍 SEO (indexação correta pelo Google)</li>
+</ul>
+
+<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/picture" target="_blank">MDN - picture</a> |
+   <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/figure" target="_blank">MDN - figure</a> |
+   <a href="https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA" target="_blank">MDN - ARIA</a>
+</p>
+
+<p><a href="#indice">Voltar ao índice</a></p>
+
 
 
 <h2 id="tags-citacao">Tags de Citação e Referência</h2>
